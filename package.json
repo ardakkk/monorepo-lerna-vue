@@ -1,0 +1,21 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/project-a",
+    "packages/project-b",
+    "packages/modules/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "test": "lerna run test --scope={common-components, project-a} --stream",
+    "update:version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff",
+    "changed": "lerna changed",
+    "publish:all": "lerna publish from-package --registry http://localhost:4873",
+    "clean": "lerna clean"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}
