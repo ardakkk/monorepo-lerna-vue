@@ -1,1 +1,1 @@
-export const service = (val) => console.log(val);
+export const service = (val) => val.toUppercase();
