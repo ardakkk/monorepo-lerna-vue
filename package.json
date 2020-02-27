@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "test": "lerna run test:unit --scope={project-a, project-b} --stream",
+    "test": "lerna run test:unit --scope=project-a --stream",
     "update:version": "lerna version --conventional-commits --yes",
     "diff": "lerna diff",
     "changed": "lerna changed",

@@ -5,6 +5,7 @@
                 <div class="col-md-4 header__burger_button"><burger-button/></div>
                 <div class="col-lg-4 header__logo"><logo/></div>
                 <div class="col-lg-4 header__menu"><menu-list/></div>
+                <div>test</div>
             </div>
         </div>
     </header>
