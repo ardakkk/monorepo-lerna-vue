@@ -4,8 +4,9 @@
             <div class="row header__row">
                 <div class="col-md-4 header__burger_button"><burger-button/></div>
                 <div class="col-lg-4 header__logo"><logo/></div>
-                <div class="col-lg-4 header__menu"><menu-list/></div>
-                <div>test</div>
+                <div class="col-lg-4 header__menu">
+                    <simple-button>Sign Out</simple-button>
+                </div>
             </div>
         </div>
     </header>
@@ -14,14 +15,14 @@
 <script type="text/javascript">
 import BurgerButton from '../../components/Buttons/BurgerButton/BurgerButton.vue';
 import Logo from '../../components/Logo/Logo.vue';
-import MenuList from '../../components/MenuList/MenuList.vue';
+import SimpleButton from '../../components/Buttons/SimpleButton/SimpleButton.vue';
 
 export default {
     name: 'Header',
     components: {
         BurgerButton,
         Logo,
-        MenuList,
+        SimpleButton,
     }
 }
 </script>
